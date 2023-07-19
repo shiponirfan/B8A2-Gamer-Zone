@@ -272,6 +272,46 @@
   margin-right: 100px;
 }
 /* Game Download CSS End */
+/* Game List CSS Start */
+.game-list-section {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+  padding: 120px 0;
+}
+.game-list-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 34px;
+  justify-content: center;
+}
+.game-list {
+  border-radius: 50px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  border: 2px solid transparent;
+  transition: all 0.3s linear;
+}
+.game-list img {
+  padding: 8px;
+}
+.game-list h3 {
+  color: #0b0223;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 28px 16px;
+  transition: all 0.3s linear;
+}
+.game-list:hover {
+  border: 2px solid #ff42a5;
+}
+.game-list:hover h3 {
+  color: #ff42a5;
+}
+/* Game List CSS End */
 
 /* Media Queries Breakpoints Start  */
 
