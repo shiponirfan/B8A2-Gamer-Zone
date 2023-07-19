@@ -1,0 +1,226 @@
+/* Global CSS Start */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Work Sans", sans-serif;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.btn-primary {
+  border-radius: 48px;
+  background: #ff42a5;
+  padding: 20px 40px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all .3s linear;
+}
+.btn-secondary {
+  border-radius: 48px;
+  background: #4EC5F7;
+  padding: 20px 40px;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all .3s linear;
+}
+.btn-primary:hover{
+    background-color: #b60962;
+}
+.btn-secondary:hover{
+    background-color: #1a98ce;
+}
+/* Global CSS End */
+
+/* Navbar CSS Start */
+.navbar-section {
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 240px;
+}
+.logo-area {
+  display: flex;
+  align-items: center;
+}
+.logo-area h3 {
+  color: #0b0223;
+  margin-left: 20px;
+  font-size: 2.8rem;
+  font-weight: 700;
+  padding: 38px 0;
+}
+.logo-area h3 span {
+  color: #ff42a5;
+}
+.main-menu {
+  display: flex;
+  align-items: center;
+}
+.main-menu ul {
+  display: flex;
+}
+.main-menu ul li {
+  list-style: none;
+  margin-right: 32px;
+}
+.main-menu ul li a {
+  text-decoration: none;
+  color: #3c354f;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.followers-area {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  background: rgba(11, 2, 35, 0.1);
+}
+.followers-area h4 {
+  color: #3c354f;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 18px 24px;
+}
+.followers-area a {
+  margin-right: 16px;
+}
+/* Navbar CSS End */
+
+/* Banner CSS Start */
+.banner-section {
+  background-image: url("../images/Group14.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+}
+.banner-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-text {
+  padding: 148px 0;
+}
+.banner-text h2 {
+  color: #0b0223;
+  font-size: 3rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.banner-text h1 {
+  font-size: 6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 5rem;
+}
+.banner-text ul {
+    margin: 30px 0;
+}
+.banner-text ul li {
+  color: #534c64;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 17px;
+
+  list-style: none;
+}
+.banner-btn-area button {
+    margin-right: 24px;
+}
+.banner-img img{
+    width: 100%;
+}
+
+/* Banner CSS End */
+
+/* Media Queries Breakpoints Start  */
+
+/* Mobile Devices */
+@media screen and (max-width: 576px) {
+    .navbar-section, .main-menu ul{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .navbar-section{
+        box-shadow: none;
+    }
+    .main-menu{
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+    .logo-area h3, .banner-text{
+        padding: 20px 0;
+    }
+    .main-menu ul li{
+        margin: 20px 0;
+    }
+    .banner-content{
+        flex-direction: column-reverse;
+    }
+    .banner-text{
+        
+        padding: 80px 0;
+    }
+    .banner-section{
+        padding: 0 20px;
+        background-size: cover;
+    }
+    .banner-btn-area{
+        display: flex;
+        flex-direction: row;
+    }
+}
+/* Tablet Devices */
+@media screen and (min-width:577px) and (max-width:960px) {
+    .navbar-section, .main-menu ul{
+        flex-direction: column;
+        padding: 20px;
+    }
+    .navbar-section{
+        box-shadow: none;
+    }
+    .main-menu{
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+    .logo-area h3, .banner-text{
+        padding: 20px 0;
+    }
+    .main-menu ul li{
+        margin: 20px 0;
+    }
+    .banner-content{
+        flex-direction: column-reverse;
+    }
+    .banner-text{
+        
+        padding: 80px 0;
+    }
+    .banner-section{
+        padding: 0 20px;
+        background-size: cover;
+    }
+    .banner-btn-area{
+        display: flex;
+        flex-direction: row;
+    }
+}
+/* Media Queries Breakpoints End  */
