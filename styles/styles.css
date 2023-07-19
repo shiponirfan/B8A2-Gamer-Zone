@@ -272,6 +272,71 @@
   margin-right: 100px;
 }
 /* Game Download CSS End */
+/* Careers Section CSS Start */
+.careers-section {
+  background: #ff42a5;
+  padding: 120px 0;
+}
+.careers-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.careers-text {
+  color: #fff;
+  width: 50%;
+}
+.careers-text h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 3.8rem;
+}
+.careers-text p {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.8rem;
+  margin: 24px 0;
+}
+.careers-list {
+  display: flex;
+  justify-content: space-between;
+}
+.careers-list-item2 {
+  text-align: right;
+}
+.careers-list-item ul {
+  margin-bottom: 40px;
+}
+.careers-list-item ul li {
+  list-style: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 2.5rem;
+}
+.careers-btn {
+  background: #fff;
+  color: #ff42a5;
+  border-radius: 48px;
+  padding: 20px 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.careers-btn:hover {
+  background-color: #b60962;
+  color: #fff;
+}
+.careers-img {
+  width: 50%;
+}
+.careers-img img {
+  width: 100%;
+}
+/* Careers Section CSS End */
 /* Game List CSS Start */
 .game-list-section {
   background: linear-gradient(
@@ -464,6 +529,18 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
+  .careers-content {
+    flex-direction: column;
+    gap: 0;
+    padding: 0 20px;
+  }
+  .careers-text,
+  .careers-img {
+    width: 100%;
+  }
+  .careers-img {
+    margin-top: 60px;
+  }
 }
 /* Tablet Devices */
 @media screen and (min-width: 577px) and (max-width: 960px) {
@@ -563,6 +640,18 @@
   .footer-terms-menu ul {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+  }
+  .careers-content {
+    flex-direction: column;
+    gap: 0;
+    padding: 0 20px;
+  }
+  .careers-text,
+  .careers-img {
+    width: 100%;
+  }
+  .careers-img {
+    margin-top: 60px;
   }
 }
 /* Media Queries Breakpoints End  */
