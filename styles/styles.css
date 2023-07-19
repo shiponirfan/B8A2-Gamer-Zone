@@ -46,6 +46,11 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.section-title{
+    color: #0B0223;
+font-size: 3rem;
+font-weight: 700;
+}
 /* Global CSS End */
 
 /* Navbar CSS Start */
@@ -198,6 +203,32 @@
   font-weight: 500;
 }
 /* We Are Gamer CSS End */
+/* Online Games CSS Start */
+.online-games-section{
+    padding: 120px 0;
+    text-align: center;
+}
+.online-games-section p{
+    color: #534C64;
+font-size: 1.2rem;
+font-weight: 400;
+line-height: 1.8rem;
+margin-top: 16px;
+}
+.online-games-content{
+    display: flex;
+    gap: 24px;
+    margin-top: 48px;
+}
+.games-card h4{
+    text-align: left;
+    color: #534C64;
+font-size: 1.2rem;
+font-weight: 500;
+line-height: 1.8rem;
+margin-top: 24px;
+}
+/* Online Games CSS End */
 
 /* Media Queries Breakpoints Start  */
 
@@ -205,7 +236,7 @@
 @media screen and (max-width: 576px) {
   .navbar-section,
   .main-menu ul,
-  .we-are-gamer-content {
+  .we-are-gamer-content, .online-games-content {
     flex-direction: column;
     padding: 20px;
   }
@@ -242,47 +273,59 @@
     text-align: center;
     margin-left: 0;
   }
+  .games-card img{
+    width: 100%;
+}
+.games-card h4{
+    text-align: center;
+}
 }
 /* Tablet Devices */
 @media screen and (min-width: 577px) and (max-width: 960px) {
-  .navbar-section,
-  .main-menu ul,
-  .we-are-gamer-content {
-    flex-direction: column;
-    padding: 20px;
+    .navbar-section,
+    .main-menu ul,
+    .we-are-gamer-content, .online-games-content {
+      flex-direction: column;
+      padding: 20px;
+    }
+    .navbar-section {
+      box-shadow: none;
+    }
+    .main-menu {
+      flex-direction: column;
+      text-align: center;
+      padding: 0;
+    }
+    .logo-area h3,
+    .banner-text {
+      padding: 20px 0;
+    }
+    .main-menu ul li {
+      margin: 20px 0;
+    }
+    .banner-content {
+      flex-direction: column-reverse;
+    }
+    .banner-text {
+      padding: 80px 0;
+    }
+    .banner-section {
+      padding: 0 20px;
+      background-size: cover;
+    }
+    .banner-btn-area {
+      display: flex;
+      flex-direction: row;
+    }
+    .we-are-gamer-text {
+      text-align: center;
+      margin-left: 0;
+    }
+    .games-card img{
+      width: 100%;
   }
-  .navbar-section {
-    box-shadow: none;
-  }
-  .main-menu {
-    flex-direction: column;
-    text-align: center;
-    padding: 0;
-  }
-  .logo-area h3,
-  .banner-text {
-    padding: 20px 0;
-  }
-  .main-menu ul li {
-    margin: 20px 0;
-  }
-  .banner-content {
-    flex-direction: column-reverse;
-  }
-  .banner-text {
-    padding: 80px 0;
-  }
-  .banner-section {
-    padding: 0 20px;
-    background-size: cover;
-  }
-  .banner-btn-area {
-    display: flex;
-    flex-direction: row;
-  }
-  .we-are-gamer-text {
-    text-align: center;
-    margin-left: 0;
+  .games-card h4{
+      text-align: center;
   }
 }
 /* Media Queries Breakpoints End  */
