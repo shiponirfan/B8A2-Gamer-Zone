@@ -312,6 +312,56 @@
   color: #ff42a5;
 }
 /* Game List CSS End */
+/* Footer Section CSS Start */
+.footer-section {
+  background: #0b0223;
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 130px;
+  color: #fff;
+}
+.footer-section p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.footer-logo {
+  display: flex;
+  justify-content: center;
+}
+.footer-logo h3 {
+  color: #fff;
+}
+.footer-menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+}
+.footer-menu ul li {
+  list-style: none;
+}
+.footer-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.footer-social-menu ul {
+  gap: 40px;
+}
+.footer-social-menu {
+  margin: 30px 0;
+}
+.footer-terms-menu {
+  margin-bottom: 25px;
+}
+.footer-terms-menu ul li a {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1rem;
+  font-weight: 500;
+}
+/* Footer Section CSS End */
 
 /* Media Queries Breakpoints Start  */
 
@@ -401,6 +451,19 @@
   .game-top-img img {
     width: 100%;
   }
+  .footer-menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-menu ul,
+  .footer-social-menu ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-terms-menu ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 /* Tablet Devices */
 @media screen and (min-width: 577px) and (max-width: 960px) {
@@ -487,6 +550,19 @@
   .game-download-img img,
   .game-top-img img {
     width: 100%;
+  }
+  .footer-menu ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer-menu ul,
+  .footer-social-menu ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-terms-menu ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 /* Media Queries Breakpoints End  */
